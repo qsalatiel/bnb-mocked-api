@@ -5,11 +5,11 @@
       "int": { "min": 1, "max": 13 }
     },
     "about": {
-      "loremParagraphs": { "minLength": 250, "maxLength": 350 }
+      "loremParagraphs": { "minLength": 800, "maxLength": 1000 }
     },
     "reviewAvg": { "int": { "min": 1, "max": 5 } },
-    "thumbnail": { "string": "https://source.unsplash.com/500x250/?beach" },
-    "bigImage": { "string": "https://source.unsplash.com/1920x600/?beach" },
+    "thumbnail": { "string": ["https://source.unsplash.com/500x250/?beach"] },
+    "bigImage": { "string": ["https://source.unsplash.com/1920x600/?beach"] },
     "uvLevel": {
       "string": ["High UV", "Medium UV", "Low UV"]
     },
@@ -44,7 +44,7 @@
   },
   "Reviews": {
     "text": {
-      "loremParagraphs": { "minLength": 250, "maxLength": 350 }
+      "loremParagraphs": { "minLength": 100, "maxLength": 150 }
     },
     "author": { "loremWords": { "minLength": 12, "maxLength": 24 } },
     "rating": { "int": { "min": 1, "max": 5 } }
