@@ -2,28 +2,26 @@
   "Beach": {
     "title": { "loremWords": { "minLength": 12, "maxLength": 24 } },
     "city": {
-      "string": [
-        "Bombinhas",
-        "Florianópolis",
-        "Itapema",
-        "Balneário Camboriú",
-        "São Francisco do Sul",
-        "Imbituba",
-        "Itapoá",
-        "Penha",
-        "Porto Belo",
-        "Palhoça",
-        "Balneário  Piçarras",
-        "São Francisco do Sul",
-        "Garopaba"
-      ]
+      "int": { "min": 1, "max": 13 }
     },
     "about": {
       "loremParagraphs": { "minLength": 250, "maxLength": 350 }
     },
     "reviewAvg": { "int": { "min": 1, "max": 5 } },
-    "thumbnail": { "string": ["https://source.unsplash.com/500x250/?beach"] },
-    "bigImage": { "string": ["https://source.unsplash.com/1920x600/?beach"] }
+    "thumbnail": { "string": "https://source.unsplash.com/500x250/?beach" },
+    "bigImage": { "string": "https://source.unsplash.com/1920x600/?beach" },
+    "uvLevel": {
+      "string": ["High UV", "Medium UV", "Low UV"]
+    },
+    "cleaness": {
+      "string": ["Very clean", "Cleanish", "Not clean"]
+    },
+    "convenienceNear": {
+      "string": ["Convenience close", "Convenience near", "convenience far"]
+    },
+    "baywatchNear": {
+      "string": ["Baywatch close", "Baywatch near", "Baywatch far"]
+    }
   },
   "City": {
     "name": {
@@ -43,5 +41,12 @@
         "Garopaba"
       ]
     }
+  },
+  "Reviews": {
+    "text": {
+      "loremParagraphs": { "minLength": 250, "maxLength": 350 }
+    },
+    "author": { "loremWords": { "minLength": 12, "maxLength": 24 } },
+    "rating": { "int": { "min": 1, "max": 5 } }
   }
 }
