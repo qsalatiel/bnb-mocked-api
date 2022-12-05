@@ -1,5 +1,33 @@
 {
   "Beach": {
-    "title": { "string": {} }
+    "title": { "loremWords": { "minLength": 2, "maxLength": 5 } },
+    "city": {
+      "hasMany": "City"
+    },
+    "about": {
+      "loremParagraphs": { "minLength": 1, "maxLength": 3 }
+    }
+  },
+  "City": {
+    "name": {
+      "string": [
+        "Bombinhas",
+        "Florianópolis",
+        "Itapema",
+        "Balneário Camboriú",
+        "São Francisco do Sul",
+        "Imbituba",
+        "Itapoá",
+        "Penha",
+        "Porto Belo",
+        "Palhoça",
+        "Balneário  Piçarras",
+        "São Francisco do Sul",
+        "Garopaba"
+      ]
+    },
+    "beach": {
+      "belongsTo": "Beach"
+    }
   }
 }
