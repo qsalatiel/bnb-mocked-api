@@ -1,11 +1,11 @@
 {
   "Beach": {
-    "title": { "loremWords": { "minLength": 2, "maxLength": 5 } },
+    "title": { "loremWords": { "minLength": 10, "maxLength": 25 } },
     "city": {
       "hasMany": "City"
     },
     "about": {
-      "loremParagraphs": { "minLength": 1, "maxLength": 3 }
+      "loremParagraphs": { "minLength": 200, "maxLength": 500 }
     }
   },
   "City": {
