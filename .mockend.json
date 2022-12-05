@@ -1,12 +1,29 @@
 {
   "Beach": {
-    "title": { "loremWords": { "minLength": 10, "maxLength": 25 } },
+    "title": { "loremWords": { "minLength": 12, "maxLength": 24 } },
     "city": {
-      "hasMany": "City"
+      "string": [
+        "Bombinhas",
+        "Florianópolis",
+        "Itapema",
+        "Balneário Camboriú",
+        "São Francisco do Sul",
+        "Imbituba",
+        "Itapoá",
+        "Penha",
+        "Porto Belo",
+        "Palhoça",
+        "Balneário  Piçarras",
+        "São Francisco do Sul",
+        "Garopaba"
+      ]
     },
     "about": {
-      "loremParagraphs": { "minLength": 200, "maxLength": 500 }
-    }
+      "loremParagraphs": { "minLength": 250, "maxLength": 350 }
+    },
+    "reviewAvg": { "int": { "min": 1, "max": 5 } },
+    "thumbnail": { "string": "https://source.unsplash.com/500x250/?beach" },
+    "bigImage": { "string": "https://source.unsplash.com/1920x600/?beach" }
   },
   "City": {
     "name": {
@@ -25,9 +42,6 @@
         "São Francisco do Sul",
         "Garopaba"
       ]
-    },
-    "beach": {
-      "belongsTo": "Beach"
     }
   }
 }
